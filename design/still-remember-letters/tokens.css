@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Remember Serif';
+  src: url('assets/serif.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --paper: #f6f7f3;
+  --paper-warm: #f0f1e9;
+  --surface: #fbfbf7;
+  --ink: #2c3733;
+  --ink-soft: #4f5c54;
+  --muted: #737c74;
+  --muted-light: #8b938a;
+  --green: #405b50;
+  --green-deep: #2b4036;
+  --line: #dce0d8;
+  --line-strong: #c4ccc1;
+  --seal: #8a5a44;
+  --seal-deep: #6d4231;
+  --seal-soft: #c9a18d;
+  --letter: #f3eee4;
+  --letter-deep: #ebe3d5;
+  --white: #fbfcf8;
+
+  --serif: 'Remember Serif', 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  --sans: 'Microsoft YaHei', 'PingFang SC', 'HarmonyOS Sans SC', 'MiSans', system-ui, sans-serif;
+  --latin: Georgia, 'Times New Roman', serif;
+
+  --gutter: clamp(22px, 5vw, 72px);
+  --max: 1440px;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}

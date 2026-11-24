@@ -1,0 +1,20 @@
+{
+  "format": 1,
+  "type": "project",
+  "title": { "zh": "寄往将来", "en": "Letters to What Comes Next" },
+  "description": {
+    "zh": "「仍然记得」的时间档案新章节：选一个尚未抵达的年份，写下一封会被封存的信。单屏网页，含年份刻度、实时信件预览、封缄动画与已寄出的信列表。",
+    "en": "A new chapter for Still, Remember: choose a future year, write a letter, seal it. A single web screen with a year dial, live letter preview, wax-seal interaction and a list of letters already sent."
+  },
+  "kind": "web",
+  "screens": [
+    { "file": "letter.html", "title": { "zh": "寄往将来", "en": "Letters to what comes next" } }
+  ],
+  "style": "editorial",
+  "categories": ["archive", "culture"],
+  "tags": ["landing", "storytelling", "form", "timeline", "seal"],
+  "lang": "zh",
+  "createdAt": "2026-11-23",
+  "author": { "login": "still-remember" },
+  "notes": "Embedded in the React app at #/letters via public/letters/letter.html?embed=1."
+}

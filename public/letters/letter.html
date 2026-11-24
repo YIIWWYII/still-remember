@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f7f3">
+<meta name="description" content="仍然记得 · 寄往将来：选一个尚未抵达的年份，把此刻想留下的话交给时间。">
+<meta name="dsh-design" content="web 1440x1000">
+<title>寄往将来 · 仍然记得</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="m14 6 6 6-6 6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H4"/><path d="m10 6-6 6 6 6"/></symbol>
+  <symbol id="i-chev-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-chev-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-feather" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 3.8a5.5 5.5 0 0 0-7.8 0L5 11.2V19h7.8l7.4-7.4a5.5 5.5 0 0 0 0-7.8Z"/><path d="M16 8 3 21"/><path d="M6 14h6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4 10-10"/></symbol>
+</svg>
+
+<header class="site-header">
+  <a class="brand" href="#" aria-label="仍然记得，首页">
+    <span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="brand-name">仍然记得<small>STILL, REMEMBER</small></span>
+  </a>
+  <nav class="main-nav" aria-label="主导航">
+    <a href="#">时间档案</a>
+    <a href="#">记忆专题</a>
+    <a href="letter.html" aria-current="page">寄往将来</a>
+    <a href="#">我的留存</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-button" type="button" aria-label="搜索记忆" title="搜索记忆"><svg width="19" height="19"><use href="#i-search"/></svg></button>
+    <a class="write-button" href="#composer"><svg width="17" height="17"><use href="#i-plus"/></svg><span>写下这封信</span></a>
+    <button class="icon-button menu-toggle" type="button" aria-label="展开菜单" aria-expanded="false" aria-controls="mobilePanel" data-menu><svg width="20" height="20"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#">时间档案</a>
+  <a href="#">记忆专题</a>
+  <a href="letter.html" aria-current="page">寄往将来</a>
+  <a href="#">我的留存</a>
+</div>
+
+<main>
+  <section class="hero" aria-label="寄往将来">
+    <div class="hero-media" aria-hidden="true"><img src="assets/window.jpg" alt=""></div>
+    <div class="hero-veil" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-topline">
+        <nav class="breadcrumbs" aria-label="时间路径">
+          <a href="#">万物的记忆</a>
+          <svg width="12" height="12"><use href="#i-chev-r"/></svg>
+          <span aria-current="page">寄往将来</span>
+        </nav>
+        <span class="hero-edition">LETTERS TO WHAT COMES NEXT</span>
+      </div>
+
+      <div class="hero-copy" data-reveal>
+        <p class="hero-overline">有些话，要交给时间。</p>
+        <h1><span>写给</span><span class="soft">还没有</span><span>到来的日子。</span></h1>
+        <p class="hero-description">有些话，现在说太早，以后说太迟。把它留在这里，交给一个尚未抵达的年份。到了那一天，它会替你重新开口。</p>
+        <a class="hero-cta" href="#composer">写下这封信<span class="round"><svg width="18" height="18"><use href="#i-arrow"/></svg></span></a>
+      </div>
+
+      <aside class="hero-side" aria-hidden="true"><span>此刻</span><span>与将来</span><i></i></aside>
+
+      <div class="next-card" data-reveal>
+        <p class="label">THE NEXT LETTER TO OPEN</p>
+        <p class="date">2046.09.18</p>
+        <div class="meta"><span>下一封启封</span><span>还有 20 年</span></div>
+        <div class="bar" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="rail-head">
+          <span class="status"><i class="status-dot"></i>启封年份 · 二〇二七 — 二一二六</span>
+          <span>每一封信，都有自己的时间</span>
+        </div>
+        <div class="rail-controls">
+          <button class="icon-button" type="button" aria-label="向更早的年份滚动" data-rail-left><svg width="18" height="18"><use href="#i-chev-l"/></svg></button>
+          <div class="year-rail" id="heroRail" role="tablist" aria-label="启封年份"></div>
+          <button class="icon-button" type="button" aria-label="向更晚的年份滚动" data-rail-right><svg width="18" height="18"><use href="#i-chev-r"/></svg></button>
+        </div>
+        <div class="hero-foot">
+          <span>选一个年份，看它离今天还有多远。</span>
+          <button class="motion-button" type="button" data-motion aria-pressed="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><rect x="7" y="5" width="3" height="14"/><rect x="14" y="5" width="3" height="14"/></svg><span>片刻，慢下来</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="year-dial" aria-labelledby="dialTitle">
+    <div class="content">
+      <div class="year-dial-grid">
+        <div class="dial-year-wrap" data-reveal>
+          <div class="dial-kicker"><span>启封年份</span><span>SEAL YEAR</span></div>
+          <div class="dial-year" id="dialYear" aria-live="polite">2046<span class="seal-dot" aria-hidden="true"></span></div>
+          <p class="dial-caption" id="dialCaption">这封信会在 <b>2046 年 9 月 18 日</b> 启封，还有 <b>20 年</b>。你可以把它交给更远一点的未来。</p>
+        </div>
+
+        <div class="dial-side" data-reveal>
+          <div class="dial-side-label"><span>拖动，选择一个尚未抵达的年份</span><span>2027 — 2126</span></div>
+          <div class="dial-range-wrap">
+            <input class="dial-range" id="yearRange" type="range" min="2027" max="2126" step="1" value="2046" aria-label="启封年份">
+            <div class="dial-ticks" aria-hidden="true"><span>2027</span><span>2050</span><span>2075</span><span>2100</span><span>2126</span></div>
+          </div>
+          <div class="preset-row" role="group" aria-label="快速选择年份">
+            <button class="preset" type="button" data-years="10">10 年后</button>
+            <button class="preset" type="button" data-years="20" aria-pressed="true">20 年后</button>
+            <button class="preset" type="button" data-years="50">50 年后</button>
+          </div>
+          <p class="dial-note"><svg width="13" height="13"><use href="#i-lock"/></svg>封存后日期才会确定；在此之前，你可以随时改写。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="composer content" id="composer" aria-labelledby="composerTitle">
+    <div class="section-head" data-reveal>
+      <div>
+        <p class="eyebrow">WRITE A LETTER · 01</p>
+        <h2 id="composerTitle">把此刻，寄给以后。</h2>
+      </div>
+      <p class="side-note">不必写得完整。一句话、一个下午、一件你不想让它消失的小事，都可以。</p>
+    </div>
+
+    <div class="composer-grid">
+      <div class="composer-copy" data-reveal>
+        <p class="lede">你不需要知道未来会发生什么，只需要留下此刻你确定的事。</p>
+
+        <form class="form" id="letterForm" novalidate>
+          <div class="field">
+            <div class="field-label"><b>这封信写给谁</b><em>TO</em></div>
+            <div class="chips" role="group" aria-label="收信人">
+              <button class="chip" type="button" data-to="未来的自己" aria-pressed="true">未来的自己</button>
+              <button class="chip" type="button" data-to="一个孩子" aria-pressed="false">一个孩子</button>
+              <button class="chip" type="button" data-to="尚未遇见的人" aria-pressed="false">尚未遇见的人</button>
+              <button class="chip" type="button" data-to="世界" aria-pressed="false">世界</button>
+            </div>
+          </div>
+
+          <label class="field">
+            <span class="field-label"><b>想让他们记得什么</b><em>WHAT REMAINS</em></span>
+            <textarea class="textarea" id="body" name="body" maxlength="1200" rows="6" placeholder="从一件小事开始：那天的光、桌边的声音、你没有说出口的话……"></textarea>
+            <span class="counter"><span id="count">0</span> / 1200</span>
+          </label>
+
+          <div class="signature-row">
+            <label class="field">
+              <span class="field-label"><b>你的署名</b><em>NAME</em></span>
+              <input class="input" id="signature" name="signature" maxlength="24" placeholder="可以用昵称" autocomplete="nickname">
+            </label>
+            <label class="field">
+              <span class="field-label"><b>此刻所在</b><em>PLACE</em></span>
+              <input class="input" id="place" name="place" maxlength="24" placeholder="一座城、一间屋子" autocomplete="address-level2">
+            </label>
+          </div>
+
+          <div class="field">
+            <div class="field-label"><b>封存方式</b><em>VISIBILITY</em></div>
+            <div class="visibility">
+              <label><input type="radio" name="visibility" value="private" checked><span><strong>私人</strong><small>只保存在这台设备，只有你能打开。</small></span></label>
+              <label><input type="radio" name="visibility" value="public"><span><strong>公开</strong><small>记录公开意愿，尚未接入真正发布。</small></span></label>
+            </div>
+          </div>
+
+          <label class="consent"><input type="checkbox" id="consent"><span>我知道这封信只保存在当前浏览器。清理浏览器数据会一并删除，重要内容请先导出。</span></label>
+
+          <div class="form-actions">
+            <button class="primary-button" type="submit" id="sealButton">
+              <svg class="seal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M9 8v8M12 7v10M15 9v6"/></svg>
+              <span>封存这封信</span>
+            </button>
+            <button class="text-button" type="button" id="draftButton"><svg width="15" height="15"><use href="#i-feather"/></svg>先存为草稿</button>
+          </div>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="preview-column" data-reveal>
+        <div class="preview-caption"><span>封存之后，它会变成这样</span><span>PREVIEW</span></div>
+        <article class="letter" id="letterPreview" aria-label="信件预览">
+          <span class="stamp" aria-hidden="true">已封存</span>
+          <div class="letter-head">
+            <div class="letter-brand">仍然记得<small>STILL, REMEMBER</small></div>
+            <div class="letter-code"><span id="letterCode">NO. 0046</span><br>TO BE OPENED · <span id="previewYear">2046</span></div>
+          </div>
+          <p class="letter-salutation" id="previewTo">致 2046 年的你：</p>
+          <div class="letter-body is-empty" id="previewBody"><span class="placeholder">你写下的话，会在这里慢慢出现。</span></div>
+          <div class="letter-sign">
+            <div>
+              <p class="who" id="previewSign">—— 未署名</p>
+              <p class="when" id="previewDate">2026.11.23 · 未填写所在</p>
+            </div>
+            <div class="seal" aria-hidden="true">
+              <span class="seal-lines"><i></i><i></i><i></i></span>
+              <span class="seal-year" id="sealYear">MMXLVI</span>
+            </div>
+          </div>
+        </article>
+        <div class="preview-foot"><span><i class="dot"></i><span id="previewStatus">草稿 · 尚未封存</span></span><span id="previewOpen">将在 2046 年开启</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sent" aria-labelledby="sentTitle">
+    <div class="content">
+      <div class="sent-head" data-reveal>
+        <div>
+          <p class="eyebrow">LETTERS ALREADY SENT · 02</p>
+          <h2 id="sentTitle">已经寄出的信</h2>
+        </div>
+        <span class="sent-count">5 封公开示例 · 1,284 封已封存</span>
+      </div>
+
+      <div class="sent-list" id="sentList">
+        <a class="letter-row is-future" href="#composer" data-reveal>
+          <span class="row-year">2046</span>
+          <span class="row-main"><h3>给二十年后仍在写信的你</h3><p>如果那时你还在写，说明有些事一直没有放下。</p></span>
+          <span class="row-to"><small>TO</small>未来的自己</span>
+          <span class="row-status is-future"><i></i>将于 2046.09.18 启封</span>
+          <svg class="row-arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="letter-row is-future" href="#composer" data-reveal>
+          <span class="row-year">2036</span>
+          <span class="row-main"><h3>如果那时我们不住在这座城</h3><p>我会记得我们第一次谈起未来时，窗外正在下雨。</p></span>
+          <span class="row-to"><small>TO</small>尚未遇见的人</span>
+          <span class="row-status is-future"><i></i>将于 2036.04.02 启封</span>
+          <svg class="row-arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="letter-row is-future" href="#composer" data-reveal>
+          <span class="row-year">2029</span>
+          <span class="row-main"><h3>关于外婆的窗台，和夏天的西瓜</h3><p>我怕以后会忘记她开门时说的那句“回来啦”。</p></span>
+          <span class="row-to"><small>TO</small>未来的自己</span>
+          <span class="row-status is-future"><i></i>将于 2029.07.11 启封</span>
+          <svg class="row-arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="letter-row" href="#composer" data-reveal>
+          <span class="row-year">1998</span>
+          <span class="row-main"><h3>给还没有出生的你</h3><p>我不知道你会喜欢什么，但我想让你知道，我们曾经很期待你。</p></span>
+          <span class="row-to"><small>TO</small>一个孩子</span>
+          <span class="row-status"><i></i>已于 2026.05.20 启封</span>
+          <svg class="row-arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="letter-row" href="#composer" data-reveal>
+          <span class="row-year">1986</span>
+          <span class="row-main"><h3>从海边寄出，地址不详</h3><p>如果你收到这封信，请替我看一眼那天的海。</p></span>
+          <span class="row-to"><small>TO</small>世界</span>
+          <span class="row-status"><i></i>已于 2016.09.01 启封</span>
+          <svg class="row-arrow" width="18" height="18"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="note" aria-label="关于寄往将来">
+    <div class="content">
+      <div class="note-quote" data-reveal>
+        <p class="eyebrow">A NOTE ON TIME</p>
+        <blockquote>我们保存的，不只是过去，<br>也是一个人<span>曾经如何期待未来</span>。</blockquote>
+      </div>
+      <div class="note-grid">
+        <div class="note-item" data-reveal><span class="num">01</span><h3>只在约定的年份开启</h3><p>封存日期由你决定。到了那一年，它才会重新出现在时间里。</p></div>
+        <div class="note-item" data-reveal><span class="num">02</span><h3>保存在这台设备上</h3><p>目前没有账户与云端同步。清理浏览器数据会删除草稿，重要内容请先导出。</p></div>
+        <div class="note-item" data-reveal><span class="num">03</span><h3>封存前都可以修改</h3><p>在按下封存之前，年份、称呼和文字都可以再改。封存之后，才会盖上那一枚章。</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer content">
+  <div class="footer-top">
+    <a class="footer-brand" href="#">仍然记得<span>让这个世界仍然记得。</span></a>
+    <a class="text-button" href="#composer">把你记得的，留在这里<svg width="18" height="18"><use href="#i-arrow"/></svg></a>
+  </div>
+  <div class="footer-bottom">
+    <span>STILL, REMEMBER © 2026</span>
+    <span>公开资料附来源 · 虚构示例单独标注</span>
+    <button type="button">关于留存与隐私</button>
+  </div>
+</footer>
+
+<dialog class="privacy-dialog" id="privacyDialog" aria-labelledby="privacyTitle">
+  <div class="privacy-head"><h2 id="privacyTitle">关于留存与隐私</h2><button type="button" class="icon-button" data-close-privacy aria-label="关闭"><svg width="19" height="19"><use href="#i-close"/></svg></button></div>
+  <div class="privacy-copy">
+    <p>“寄往将来”目前是一个原型。信只保存在当前浏览器的本地存储里，没有账户、云端同步或真正的定时启封。</p>
+    <p>选择“公开”只记录你的发布意愿，不会把信发布到互联网。清理浏览器数据会删除草稿，重要内容请先导出或另存。</p>
+    <p>这里不会收集收信人信息，也不做任何自动发送。等真正的账户与权限系统完成之后，这些约定才会生效。</p>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status"><svg width="15" height="15"><use href="#i-check"/></svg><span id="toastText"></span></div>
+
+<script src="letter.js"></script>
+</body>
+</html>
